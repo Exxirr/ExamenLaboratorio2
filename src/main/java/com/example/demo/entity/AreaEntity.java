@@ -24,9 +24,4 @@ public class AreaEntity {
 	@Column(name = "nombre_area", nullable = false, length = 45)
 	private String nomArea;
 	
-	@OneToMany(mappedBy = "idArea", cascade = CascadeType.ALL)
-	private List<EmpleadoEntity> empleadoEntity;
-	
-	
-	
 }
